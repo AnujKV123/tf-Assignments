@@ -17,3 +17,11 @@ variable "var-obj" {
     con = string
   })
 }
+
+variable "a" {
+  type = list(string)
+}
+
+variable "practice_map" {
+  type = map(string)
+}

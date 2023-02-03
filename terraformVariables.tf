@@ -63,17 +63,9 @@ resource "local_file" "fooVarPct" {
   content  = var.practice_map["content"]
 }
 
-variable "practice_map" {
-  type = map(string)
-}
-
 resource "local_file" "fooVarPctList" {
   filename = var.a[2]
   content  = "print('Hello World')"
-}
-
-variable "a" {
-  type = list(string)
 }
 
 resource "local_file" "fooVarPctObj" {
